@@ -116,16 +116,19 @@ func readFile(filename string) {
 		}
 		Questions = append(Questions, record[0])
 		Answers = append(Answers, record[1])
-		//Questions = shuffleQuestions(Questions)
+		shuffleQuestions()
 	}
 }
-func shuffleQuestions(src []string) []string {
-	dest := make([]string, len(src))
-	perm := rand.Perm(len(src))
+func shuffleQuestions() {
+	destq := make([]string, len(Questions))
+	desta := make([]string, len(Answers))
+	perm := rand.Perm(len(Questions))
 	for i, v := range perm {
-		dest[v] = src[i]
+		destq[v] = Questions[i]
+		desta[v] = Answers[i]
 	}
-	return dest
+	Questions = destq
+	Answers = desta
 }
 func nextButtonPressed() {
 
