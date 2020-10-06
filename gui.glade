@@ -1,91 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Generated with glade 3.36.0 -->
+<!-- Generated with glade 3.38.1 -->
 <interface>
   <requires lib="gtk+" version="3.22"/>
-  <object class="GtkWindow">
-    <property name="can_focus">False</property>
-    <child>
-      <object class="GtkNotebook">
-        <property name="visible">True</property>
-        <property name="can_focus">True</property>
-        <child>
-          <placeholder/>
-        </child>
-        <child type="tab">
-          <object class="GtkLabel">
-            <property name="visible">True</property>
-            <property name="can_focus">False</property>
-            <property name="label" translatable="yes">page 1</property>
-          </object>
-          <packing>
-            <property name="tab_fill">False</property>
-          </packing>
-        </child>
-        <child>
-          <placeholder/>
-        </child>
-        <child type="tab">
-          <object class="GtkLabel">
-            <property name="visible">True</property>
-            <property name="can_focus">False</property>
-            <property name="label" translatable="yes">page 2</property>
-          </object>
-          <packing>
-            <property name="position">1</property>
-            <property name="tab_fill">False</property>
-          </packing>
-        </child>
-        <child>
-          <placeholder/>
-        </child>
-        <child type="tab">
-          <object class="GtkLabel">
-            <property name="visible">True</property>
-            <property name="can_focus">False</property>
-            <property name="label" translatable="yes">page 3</property>
-          </object>
-          <packing>
-            <property name="position">2</property>
-            <property name="tab_fill">False</property>
-          </packing>
-        </child>
-      </object>
-    </child>
-    <child type="titlebar">
-      <placeholder/>
-    </child>
-  </object>
   <object class="GtkWindow" id="window_main">
-    <property name="can_focus">False</property>
+    <property name="can-focus">False</property>
     <property name="resizable">False</property>
-    <property name="window_position">center</property>
-    <property name="default_width">640</property>
-    <property name="default_height">480</property>
+    <property name="window-position">center</property>
+    <property name="default-width">640</property>
+    <property name="default-height">480</property>
     <child>
       <object class="GtkBox">
         <property name="visible">True</property>
-        <property name="can_focus">False</property>
+        <property name="can-focus">False</property>
         <property name="orientation">vertical</property>
         <child>
           <object class="GtkMenuBar">
             <property name="visible">True</property>
-            <property name="can_focus">False</property>
+            <property name="can-focus">False</property>
             <child>
               <object class="GtkMenuItem">
                 <property name="visible">True</property>
-                <property name="can_focus">False</property>
+                <property name="can-focus">False</property>
                 <property name="label" translatable="yes">_Файл</property>
-                <property name="use_underline">True</property>
+                <property name="use-underline">True</property>
                 <child type="submenu">
                   <object class="GtkMenu">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <child>
                       <object class="GtkMenuItem" id="open_menubtn">
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
+                        <property name="can-focus">False</property>
                         <property name="label" translatable="yes">Открыть</property>
-                        <property name="use_underline">True</property>
+                        <property name="use-underline">True</property>
                       </object>
                     </child>
                   </object>
@@ -102,14 +49,14 @@
         <child>
           <object class="GtkLabel" id="question_text">
             <property name="visible">True</property>
-            <property name="can_focus">False</property>
+            <property name="can-focus">False</property>
             <property name="halign">start</property>
             <property name="valign">end</property>
-            <property name="margin_start">16</property>
-            <property name="margin_top">16</property>
+            <property name="margin-start">16</property>
+            <property name="margin-top">16</property>
             <property name="vexpand">False</property>
             <property name="label" translatable="yes">Выберите фаил с вопросами</property>
-            <property name="single_line_mode">True</property>
+            <property name="single-line-mode">True</property>
           </object>
           <packing>
             <property name="expand">False</property>
@@ -120,11 +67,11 @@
         <child>
           <object class="GtkEntry" id="answer_box">
             <property name="visible">True</property>
-            <property name="can_focus">True</property>
+            <property name="can-focus">True</property>
             <property name="halign">center</property>
             <property name="valign">center</property>
             <property name="vexpand">True</property>
-            <property name="placeholder_text" translatable="yes">Ответ</property>
+            <property name="placeholder-text" translatable="yes">Ответ</property>
           </object>
           <packing>
             <property name="expand">False</property>
@@ -136,13 +83,13 @@
           <object class="GtkButton" id="next_btn">
             <property name="label" translatable="yes">Начать</property>
             <property name="visible">True</property>
-            <property name="can_focus">True</property>
-            <property name="receives_default">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
             <property name="halign">end</property>
             <property name="valign">end</property>
-            <property name="margin_end">10</property>
-            <property name="margin_top">1</property>
-            <property name="margin_bottom">10</property>
+            <property name="margin-end">10</property>
+            <property name="margin-top">1</property>
+            <property name="margin-bottom">10</property>
           </object>
           <packing>
             <property name="expand">False</property>
@@ -151,9 +98,6 @@
           </packing>
         </child>
       </object>
-    </child>
-    <child type="titlebar">
-      <placeholder/>
     </child>
   </object>
 </interface>
