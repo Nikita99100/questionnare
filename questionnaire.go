@@ -140,6 +140,7 @@ func nextButtonPressed() {
 	} else {
 		QuestionLabel.SetText(Questions[0])
 		answer, _ := AnswerBox.GetText()
+		AnswerBox.SetText("")
 		if Answers[QuestionNumber-1] == answer {
 			Score++
 		}
